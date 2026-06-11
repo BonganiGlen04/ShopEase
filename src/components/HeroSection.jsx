@@ -11,8 +11,8 @@ const HeroSection = () => {
                     convenient place.
                 </span>
                 <div className="flex gap-4 mt-8">
-                    <button className="bg-black text-white px-8 py-3 rounded-medium font-medium cursor-pointer hover:bg-black/90">Show Now</button>
-                    <button className="bg-black text-white px-8 py-3 rounded-medium font-medium cursor-pointer hover:bg-black/90">Explore Deals</button>
+                    <button className="bg-black text-white px-8 py-3 rounded-md font-medium cursor-pointer hover:bg-black/90">Show Now</button>
+                    <button className="bg-black text-white px-8 py-3 rounded-md font-medium cursor-pointer hover:bg-black/90">Explore Deals</button>
                 </div>
             </div>
             <img 
