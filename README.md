@@ -1,21 +1,27 @@
 # ShopEase
 
-A modern React + Vite storefront landing page built with Tailwind CSS. ShopEase features a hero section, trending top products, reusable feature blocks, and a branded footer.
+A lightweight React + Vite storefront landing page with reusable components and optional Firebase Hosting deployment.
+
+## Overview
+
+- Landing page demo showcasing a hero, featured products, promotional features, and a branded footer.
+- Focused on composable React components and fast startup with Vite.
 
 ## Features
 
 - Responsive hero section with CTA buttons
-- Top products carousel loaded from a remote API
-- Reusable feature section layout for promotions and benefits
-- Simple navbar with cart, help, login, and signup controls
+- Top products listing (demo data / external API)
+- Reusable feature section for promotions and benefits
+- Simple navbar with cart/help/login controls
 - Clean footer with company links and app store badges
 
 ## Tech Stack
 
-- React 19
-- Vite 5
-- Tailwind CSS 4
+- React
+- Vite
+- Tailwind CSS
 - ESLint
+- Firebase Hosting (optional)
 
 ## Project Structure
 
@@ -28,23 +34,23 @@ A modern React + Vite storefront landing page built with Tailwind CSS. ShopEase 
 - `src/utils/app.constants.js` — external API and asset constants
 - `src/assets/` — image assets used in the UI
 
-## Setup
+## Quick Start
 
 1. Install dependencies
 
-   ```bash
-   npm install
-   ```
+```bash
+npm install
+```
 
 2. Start the development server
 
-   ```bash
-   npm run dev
-   ```
+```bash
+npm run dev
+```
 
 3. Open the local URL shown in the terminal (usually `http://localhost:5173`)
 
-## Build
+## Build & Preview
 
 Create a production build:
 
@@ -58,8 +64,39 @@ Preview the production build locally:
 npm run preview
 ```
 
-## Notes
+## Firebase Hosting (optional)
 
-- The top products section fetches data from `https://dummyjson.com/products`.
-- UI styling is done with Tailwind CSS utility classes in JSX.
-- Customize the storefront content and images to fit your brand.
+If you want to deploy this site to Firebase Hosting:
+
+1. Install Firebase CLI (if not installed):
+
+```bash
+npm install -g firebase-tools
+```
+
+2. Authenticate and initialize hosting (one-time):
+
+```bash
+firebase login
+firebase init hosting
+# when prompted, select the project and set the public directory to `dist` (Vite's output)
+```
+
+3. Build and deploy:
+
+```bash
+npm run build
+firebase deploy --only hosting
+```
+
+## Configuration
+
+- API base URL and other runtime values can be placed in Vite env vars (e.g. `VITE_API_BASE_URL`) or edited in `src/utils/app.constants.js`.
+
+## Contributing
+
+- Feel free to open issues or pull requests to improve the demo and components.
+
+## License
+
+- MIT — adapt and reuse for your projects.
