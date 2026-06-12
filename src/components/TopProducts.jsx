@@ -29,8 +29,6 @@ const TopProducts = () => {
                         <span className="font-medium text-lg">${prod.price}</span>
 
                     </div>
-                    
-                
                 )
                 })}
             </div>
