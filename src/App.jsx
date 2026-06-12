@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar"
 import HeroSection from "./components/HeroSection"
 import TopProducts from "./components/TopProducts"
 import FeatureSection from "./components/FeatureSection"
+import Footer from "./components/Footer"
 import One from "./assets/first-feature.png"
 import Two from "./assets/second.png"
 import Three from "./assets/third.png"
@@ -51,9 +52,8 @@ const App = () => {
         ctaTitle="Shop Now"
         image={Five}
        />
-      
     </div>
-
+    <Footer />
   </div>)
 }
 
