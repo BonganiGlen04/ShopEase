@@ -1,5 +1,7 @@
 # ShopEase
 
+Hosted at: https://shopease-81232.web.app
+
 A lightweight React + Vite storefront landing page with reusable components and optional Firebase Hosting deployment.
 
 ## Overview
